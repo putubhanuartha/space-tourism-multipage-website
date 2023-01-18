@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import humbtn from "/assets/icon/icon-hamburger.svg";
 import closebtn from "/assets/icon/icon-close.svg";
-import "./Header.css";
+
 export default function Header() {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
   return (

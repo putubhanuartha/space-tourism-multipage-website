@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import "./Mainpage.css";
+
 export default function Mainpage() {
   return (
     <div id="mainpage">
