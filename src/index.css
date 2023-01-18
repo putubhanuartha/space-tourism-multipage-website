@@ -2,11 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base {
-  body {
-    @apply bg-[url("/assets/mainbg/background-home-mobile.jpg")] md:bg-[url("/assets/mainbg/background-home-tablet.jpg")] xl:bg-[url("/assets/mainbg/background-home-desktop.jpg")] bg-cover bg-no-repeat;
-  }
-}
+
 #mainpage h5 {
   @apply font-barlow-condensed text-white text-lg md:text-2xl lg:text-start lg:text-2xl tracking-[.3rem] font-light text-center;
 }

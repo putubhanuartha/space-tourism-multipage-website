@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
-
-export default function Mainpage() {
+import { Link } from "react-router-dom";
+export default function Mainpage(props) {
+  const { path, setPath } = props.pathState;
+  useEffect(() => {
+    setPath("/");
+  });
   return (
     <div id="mainpage">
       <div className="container mx-auto mt-20 md:mt-10 lg:mt-20 px-6 flex flex-col lg:flex-row md:items-center md:justify-around items-center ">
@@ -16,13 +20,13 @@ export default function Mainpage() {
           </p>
         </div>
 
-        <a
+        <Link
           id="homebtn"
-          href="#"
+          to="/"
           className="bg-white rounded-full w-40 h-40 lg:w-52 lg:h-52 flex mt-24 lg:mt-0 transition-shadow duration-300 justify-center items-center hover:shadow-[0px_0px_0px_20px_rgba(151,151,151,0.8)]"
         >
           <h4>EXPLORE</h4>
-        </a>
+        </Link>
       </div>
     </div>
   );

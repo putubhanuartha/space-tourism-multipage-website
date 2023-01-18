@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import humbtn from "/assets/icon/icon-hamburger.svg";
 import closebtn from "/assets/icon/icon-close.svg";
-
+import { Link } from "react-router-dom";
 export default function Header() {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
+  console.log("header render");
   return (
     <div
       id="header"
@@ -11,13 +12,13 @@ export default function Header() {
     >
       <div className="container mx-auto flex justify-between px-7 lg:px-20 items-center md:mt-6 mt-4">
         <div id="logo">
-          <a href="#index.html">
+          <Link to="/">
             <img
               src="/assets/icon/logo.svg"
               alt="logo"
               className="w-9 h-9"
             />
-          </a>
+          </Link>
         </div>
         <div
           id="topbar"
@@ -25,24 +26,24 @@ export default function Header() {
         >
           <ul className="flex">
             <li>
-              <a href="#">
+              <Link to="/">
                 <span>00</span> Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/destination">
                 <span>01</span> Destination
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/crew">
                 <span>02</span> Crew
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/technology">
                 <span>03</span> Technology
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -56,24 +57,24 @@ export default function Header() {
         >
           <ul>
             <li>
-              <a href="#">
+              <Link to="/">
                 <span>00</span> Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/destination">
                 <span>01</span> Destination
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/crew">
                 <span>02</span> Crew
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/technology">
                 <span>03</span> Technology
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
