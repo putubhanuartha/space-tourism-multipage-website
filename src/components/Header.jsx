@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div
       id="header"
-      className="bg-transparent relative md:bg-black md:backdrop-blur-lg"
+      className="bg-transparent relative md:bg-transparent md:backdrop-blur-sm"
     >
       <div className="container mx-auto flex justify-between px-7 lg:px-20 items-center md:mt-6 mt-4">
         <div id="logo">
@@ -25,22 +25,22 @@ export default function Header() {
         >
           <ul className="flex">
             <li>
-              <a href="">
+              <a href="#">
                 <span>00</span> Home
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <span>01</span> Destination
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <span>02</span> Crew
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <span>03</span> Technology
               </a>
             </li>
@@ -48,26 +48,30 @@ export default function Header() {
         </div>
         <div
           id="sidebar"
-          className="bg-transparent absolute top-[9vh] right-0 rounded-lg backdrop-blur-lg md:hidden"
+          className={`bg-transparent absolute top-[9vh] right-0 rounded-lg backdrop-blur-sm md:hidden transition-all duration-300 ${
+            isSidebarActive
+              ? "translate-x-0 opacity-1"
+              : "translate-x-48  opacity-0"
+          }`}
         >
           <ul>
             <li>
-              <a href="">
+              <a href="#">
                 <span>00</span> Home
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <span>01</span> Destination
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <span>02</span> Crew
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <span>03</span> Technology
               </a>
             </li>

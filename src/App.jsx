@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import Mainpage from './pages/Mainpage'
-
-
+import { useState } from "react";
+import Mainpage from "./pages/Mainpage";
+import Header from "./components/Header";
 function App() {
-
-
   return (
-    <div id='App'>
-      <Mainpage/>
+    <div id="App">
+      <Header />
+      <Mainpage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

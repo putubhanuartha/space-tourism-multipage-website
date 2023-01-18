@@ -2,8 +2,8 @@ ul > li > a {
   @apply text-white font-barlow-condensed text-lg tracking-widest uppercase px-4 w-full block;
 }
 #sidebar > ul > li {
-  @apply py-8 hover:border-b-2 border-white w-60;
+  @apply py-8 hover:border-b-2 border-[rgba(255,255,255,0.7)] w-60;
 }
 #topbar > ul > li {
-  @apply py-11 hover:border-b-2 border-white;
+  @apply py-11 hover:border-b-2 border-[rgba(255,255,255,0.7)];
 }

@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
-@import "../src/components/Header.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @layer base {
   body {
-    @apply bg-[url("/assets/mainbg/background-home-mobile.jpg")] bg-cover;
+    @apply bg-[url("/assets/mainbg/background-home-mobile.jpg")] md:bg-[url("/assets/mainbg/background-home-tablet.jpg")] xl:bg-[url("/assets/mainbg/background-home-desktop.jpg")] bg-cover bg-no-repeat;
+  }
+  h5 {
+    @apply font-barlow-condensed text-white text-lg md:text-2xl lg:text-start lg:text-2xl tracking-[.3rem] font-light text-center;
+  }
+  h1 {
+    @apply text-white mt-5 font-bellefair md:text-7xl lg:text-9xl lg:text-start text-6xl text-center;
+  }
+  p {
+    @apply font-barlow-condensed mt-5 text-white text-base lg:text-2xl lg:text-start md:text-lg font-light text-center;
+  }
+  h4 {
+    @apply m-auto font-bellefair text-xl;
   }
 }
