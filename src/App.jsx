@@ -27,7 +27,7 @@ function App() {
         id="App"
         className={`${homepagebg} h-screen w-screen overflow-hidden bg-no-repeat bg-cover`}
       >
-        <Header />
+        <Header path={path} />
         <Routes>
           <Route
             path="/"

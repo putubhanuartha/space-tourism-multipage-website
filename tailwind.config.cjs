@@ -12,18 +12,15 @@ module.exports = {
         bellefair: ["Bellefair", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-        "home-mobile":
-          "url('./public/assets/mainbg/background-home-mobile.jpg')",
-        "home-tablet":
-          "url('./public/assets/mainbg/background-home-tablet.jpg')",
-        "home-desktop":
-          "url('./public/assets/mainbg/background-home-desktop.jpg')",
+        "home-mobile": "url('/assets/mainbg/background-home-mobile.jpg')",
+        "home-tablet": "url('/assets/mainbg/background-home-tablet.jpg')",
+        "home-desktop": "url('/assets/mainbg/background-home-desktop.jpg')",
         "destination-mobile":
-          "url('./public/assets/destinationbg/background-destination-mobile.jpg')",
+          "url('/assets/destinationbg/background-destination-mobile.jpg')",
         "destination-tablet":
-          "url('./public/assets/destinationbg/background-destination-tablet.jpg')",
+          "url('/assets/destinationbg/background-destination-tablet.jpg')",
         "destination-desktop":
-          "url('./public/assets/destinationbg/background-destination-desktop.jpg')",
+          "url('/assets/destinationbg/background-destination-desktop.jpg')",
       },
     },
   },
