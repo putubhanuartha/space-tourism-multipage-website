@@ -3,30 +3,58 @@ import Mainpage from "./pages/Mainpage";
 import Header from "./components/Header";
 import Destination from "./pages/Destination";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import bgpath from "./bgpath";
 function App() {
-  console.log(window.location.pathname);
-  const [homepagebg, setHomePageBg] = useState(
-    "bg-home-mobile md:bg-home-tablet xl:bg-home-desktop"
-  );
   const [path, setPath] = useState("/");
+  const [windowSize, setWindowSize] = useState();
+  function getWindow() {
+    if (window.innerWidth < 768) {
+      setWindowSize("s");
+    } else if (window.innerWidth > 768 && window.innerWidth < 1280) {
+      setWindowSize("m");
+    } else if (window.innerWidth > 1280) {
+      setWindowSize("l");
+    }
+  }
   useEffect(() => {
-    if (window.location.pathname === "/") {
-      setHomePageBg("bg-home-mobile md:bg-home-tablet xl:bg-home-desktop");
+    if (path === "/") {
+      switch (windowSize) {
+        case "s":
+          document.body.style.backgroundImage = `url("${bgpath[0].mobile}")`;
+          break;
+        case "m":
+          document.body.style.backgroundImage = `url("${bgpath[0].tablet}")`;
+          break;
+        case "l":
+          document.body.style.backgroundImage = `url("${bgpath[0].desktop}")`;
+          break;
+      }
+    } else if (path === "/destination") {
+      switch (windowSize) {
+        case "s":
+          document.body.style.backgroundImage = `url("${bgpath[1].mobile}")`;
+          break;
+        case "m":
+          document.body.style.backgroundImage = `url("${bgpath[1].tablet}")`;
+          break;
+        case "l":
+          document.body.style.backgroundImage = `url("${bgpath[1].desktop}")`;
+          break;
+      }
     }
-    if (window.location.pathname === "/destination") {
-      setHomePageBg(
-        "bg-destination-mobile md:bg-destination-tablet xl:bg-destination-desktop"
-      );
-    }
+  }, [windowSize, path]);
+  useEffect(() => {
+    getWindow();
+    const size = window.addEventListener("resize", () => {
+      getWindow();
+    });
+    return () => {
+      removeEventListener("resize", size);
+    };
   });
-
   return (
     <Router>
-      <div
-        id="App"
-        className={`${homepagebg} h-screen w-screen overflow-hidden bg-no-repeat bg-cover`}
-      >
+      <div id="App">
         <Header path={path} />
         <Routes>
           <Route

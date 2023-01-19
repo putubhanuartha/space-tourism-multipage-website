@@ -2,6 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  body {
+    @apply bg-cover bg-no-repeat;
+  }
+}
 /*Main page*/
 #mainpage h5 {
   @apply font-barlow-condensed text-white text-lg md:text-2xl lg:text-start lg:text-2xl tracking-[.3rem] font-light text-center;
@@ -33,5 +38,22 @@ ul > li > a {
 /*End of header*/
 
 /*Destination*/
-
+#destination h2 {
+  @apply text-center text-white font-barlow-condensed text-base md:text-xl xl:text-2xl tracking-wider;
+}
+#destination ul li button {
+  @apply text-center text-sky-200 uppercase font-barlow-condensed tracking-widest text-xl;
+}
+#descriptiondestination h1 {
+  @apply text-center text-white uppercase font-bellefair text-6xl md:text-8xl xl:text-9xl xl:text-start;
+}
+#descriptiondestination p {
+  @apply text-center text-sky-200 font-barlow-condensed tracking-wide md:text-lg xl:text-xl xl:text-start;
+}
+#descriptiondestination h5 {
+  @apply text-center text-white font-barlow-condensed text-lg md:text-xl xl:text-2xl;
+}
+#descriptiondestination h4 {
+  @apply text-center text-white font-bellefair text-3xl md:text-5xl xl:text-6xl xl:mt-7;
+}
 /*End of destination*/

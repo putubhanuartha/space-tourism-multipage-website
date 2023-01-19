@@ -7,7 +7,6 @@ export default function Header(props) {
   const ulSidebar = useRef(null);
   const ulTopbar = useRef(null);
   function getList(ul) {
-    console.log(ul.current);
     const li = ul.current.getElementsByTagName("li");
     Array.from(li).forEach((el) => {
       if (el.dataset.path === props.path) {
