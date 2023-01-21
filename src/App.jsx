@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Destination from "./pages/Destination";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import bgpath from "./bgpath";
+import Crew from "./pages/Crew";
 function App() {
   const [path, setPath] = useState("/");
   const [windowSize, setWindowSize] = useState();
@@ -64,6 +65,10 @@ function App() {
           <Route
             path="/destination"
             element={<Destination pathState={{ path, setPath }} />}
+          />
+          <Route
+            path="/crew"
+            element={<Crew pathState={{ path, setPath }} />}
           />
         </Routes>
       </div>
