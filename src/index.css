@@ -72,3 +72,21 @@ ul > li > a {
   @apply lg:text-start text-center text-sky-200 font-barlow-condensed md:text-lg lg:text-xl xl:text-2xl;
 }
 /*End of crew*/
+
+/*technology*/
+#technology h2 {
+  @apply lg:text-start text-white text-base font-barlow-condensed tracking-wider text-center;
+}
+#technology h2 span {
+  @apply text-gray-300;
+}
+#techdesc h6 {
+  @apply text-sky-100 font-barlow-condensed text-lg text-center;
+}
+#techdesc h3 {
+  @apply text-white font-bellefair text-2xl text-center;
+}
+#techdesc p {
+  @apply text-sky-200 font-barlow-condensed text-center;
+}
+/*end of technology*/

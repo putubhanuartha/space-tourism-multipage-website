@@ -11,6 +11,9 @@ module.exports = {
         ],
         bellefair: ["Bellefair", ...defaultTheme.fontFamily.sans],
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   plugins: [],

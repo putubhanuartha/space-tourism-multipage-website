@@ -97,7 +97,12 @@ function App() {
           />
           <Route
             path="/technology"
-            element={<Technology pathState={{ path, setPath }} />}
+            element={
+              <Technology
+                pathState={{ path, setPath }}
+                window={windowSize}
+              />
+            }
           />
         </Routes>
       </div>

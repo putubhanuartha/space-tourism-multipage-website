@@ -67,7 +67,7 @@ export default function Header(props) {
         </div>
         <div
           id="sidebar"
-          className={`bg-transparent absolute top-[9vh] right-0 rounded-lg backdrop-blur-sm md:hidden transition-all duration-300 ${
+          className={`bg-transparent absolute top-[9vh] right-0 rounded-lg backdrop-blur-sm md:hidden transition-all duration-300 z-40 ${
             isSidebarActive
               ? "translate-x-0 opacity-1"
               : "translate-x-48  opacity-0"
