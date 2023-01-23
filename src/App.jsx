@@ -5,6 +5,7 @@ import Destination from "./pages/Destination";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import bgpath from "./bgpath";
 import Crew from "./pages/Crew";
+import Technology from "./pages/Technology";
 function App() {
   const [path, setPath] = useState("/");
   const [windowSize, setWindowSize] = useState();
@@ -54,6 +55,18 @@ function App() {
           document.body.style.backgroundImage = `url("${bgpath[2].desktop}")`;
           break;
       }
+    } else if (path === "/technology") {
+      switch (windowSize) {
+        case "s":
+          document.body.style.backgroundImage = `url("${bgpath[3].mobile}")`;
+          break;
+        case "m":
+          document.body.style.backgroundImage = `url("${bgpath[3].tablet}")`;
+          break;
+        case "l":
+          document.body.style.backgroundImage = `url("${bgpath[3].desktop}")`;
+          break;
+      }
     }
   }, [windowSize, path]);
   useEffect(() => {
@@ -81,6 +94,10 @@ function App() {
           <Route
             path="/crew"
             element={<Crew pathState={{ path, setPath }} />}
+          />
+          <Route
+            path="/technology"
+            element={<Technology pathState={{ path, setPath }} />}
           />
         </Routes>
       </div>

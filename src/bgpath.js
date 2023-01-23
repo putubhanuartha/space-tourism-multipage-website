@@ -14,5 +14,10 @@ const bgpath = [
     tablet: "/assets/crewbg/background-crew-tablet.jpg",
     desktop: "/assets/crewbg/background-crew-desktop.jpg",
   },
+  {
+    mobile: "/assets/techbg/background-technology-mobile.jpg",
+    tablet: "/assets/techbg/background-technology-tablet.jpg",
+    desktop: "/assets/techbg/background-technology-desktop.jpg",
+  },
 ];
 export default bgpath;
