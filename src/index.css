@@ -4,7 +4,7 @@
 @tailwind utilities;
 @layer base {
   body {
-    @apply bg-cover bg-no-repeat;
+    @apply bg-cover bg-no-repeat overflow-x-hidden;
   }
 }
 /*Main page*/
@@ -57,3 +57,18 @@ ul > li > a {
   @apply text-center text-white font-bellefair text-3xl md:text-5xl xl:text-6xl xl:mt-7;
 }
 /*End of destination*/
+
+/*Crew*/
+#crew h2 {
+  @apply md:text-start text-center text-white font-barlow-condensed tracking-wider md:text-lg lg:text-xl xl:text-2xl;
+}
+#descriptionCard h5 {
+  @apply lg:text-start text-center text-gray-400 uppercase font-bellefair text-base md:text-xl lg:text-2xl xl:text-3xl;
+}
+#descriptionCard h3 {
+  @apply lg:text-start text-center text-white uppercase font-bellefair text-2xl md:text-4xl lg:text-5xl xl:text-7xl;
+}
+#descriptionCard p {
+  @apply lg:text-start text-center text-sky-200 font-barlow-condensed md:text-lg lg:text-xl xl:text-2xl;
+}
+/*End of crew*/

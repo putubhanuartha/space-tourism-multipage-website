@@ -42,6 +42,18 @@ function App() {
           document.body.style.backgroundImage = `url("${bgpath[1].desktop}")`;
           break;
       }
+    } else if (path === "/crew") {
+      switch (windowSize) {
+        case "s":
+          document.body.style.backgroundImage = `url("${bgpath[2].mobile}")`;
+          break;
+        case "m":
+          document.body.style.backgroundImage = `url("${bgpath[2].tablet}")`;
+          break;
+        case "l":
+          document.body.style.backgroundImage = `url("${bgpath[2].desktop}")`;
+          break;
+      }
     }
   }, [windowSize, path]);
   useEffect(() => {
