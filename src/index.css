@@ -3,90 +3,90 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-  body {
-    @apply bg-cover bg-no-repeat overflow-x-hidden;
-  }
+	body {
+		@apply bg-cover bg-no-repeat overflow-x-hidden;
+	}
 }
 /*Main page*/
 #mainpage h5 {
-  @apply font-barlow-condensed text-white text-lg md:text-2xl lg:text-start lg:text-2xl tracking-[.3rem] font-light text-center;
+	@apply font-barlow-condensed text-white text-lg md:text-2xl lg:text-start lg:text-2xl tracking-[.3rem] font-light text-center;
 }
 #mainpage h1 {
-  @apply text-white mt-5 font-bellefair md:text-7xl lg:text-9xl lg:text-start text-6xl text-center;
+	@apply text-white mt-5 font-bellefair md:text-7xl lg:text-9xl lg:text-start text-6xl text-center;
 }
 #mainpage p {
-  @apply font-barlow-condensed mt-5 text-white text-base lg:text-2xl lg:text-start md:text-lg font-light text-center;
+	@apply font-barlow-condensed mt-5 text-white text-base lg:text-2xl lg:text-start md:text-lg font-light text-center;
 }
 #mainpage h4 {
-  @apply m-auto font-bellefair text-xl;
+	@apply m-auto font-bellefair text-xl;
 }
 /*End of mainpage*/
 
 /*Header*/
 ul > li > a {
-  @apply text-white font-barlow-condensed text-lg tracking-widest uppercase px-4 w-full block;
+	@apply text-white font-barlow-condensed text-lg tracking-widest uppercase px-4 w-full block;
 }
 #sidebar > ul > li {
-  @apply py-8 hover:border-b-4  border-[rgba(255,255,255,0.7)] w-60;
+	@apply py-8 hover:border-b-4  border-[rgba(255,255,255,0.7)] w-60;
 }
 .active {
-  @apply border-b-4;
+	@apply border-b-4;
 }
 #topbar > ul > li {
-  @apply py-11 hover:border-b-4  border-[rgba(255,255,255,0.7)];
+	@apply py-11 hover:border-b-4  border-[rgba(255,255,255,0.7)];
 }
 /*End of header*/
 
 /*Destination*/
 #destination h2 {
-  @apply text-center text-white font-barlow-condensed text-base md:text-xl xl:text-2xl tracking-wider;
+	@apply text-center text-white font-barlow-condensed text-base md:text-xl xl:text-2xl tracking-wider;
 }
 #destination ul li button {
-  @apply text-center text-sky-200 uppercase font-barlow-condensed tracking-widest text-xl;
+	@apply text-center text-sky-200 uppercase font-barlow-condensed tracking-widest text-xl;
 }
 #descriptiondestination h1 {
-  @apply text-center text-white uppercase font-bellefair text-6xl md:text-8xl xl:text-9xl xl:text-start;
+	@apply text-center text-white uppercase font-bellefair text-6xl md:text-8xl xl:text-9xl xl:text-start;
 }
 #descriptiondestination p {
-  @apply text-center text-sky-200 font-barlow-condensed tracking-wide md:text-lg xl:text-xl xl:text-start;
+	@apply text-center text-sky-200 font-barlow-condensed tracking-wide md:text-lg xl:text-xl xl:text-start;
 }
 #descriptiondestination h5 {
-  @apply text-center text-white font-barlow-condensed text-lg md:text-xl xl:text-2xl;
+	@apply text-center text-white font-barlow-condensed text-lg md:text-xl xl:text-2xl;
 }
 #descriptiondestination h4 {
-  @apply text-center text-white font-bellefair text-3xl md:text-5xl xl:text-6xl xl:mt-7;
+	@apply text-center text-white font-bellefair text-3xl md:text-5xl xl:text-6xl xl:mt-7;
 }
 /*End of destination*/
 
 /*Crew*/
 #crew h2 {
-  @apply md:text-start text-center text-white font-barlow-condensed tracking-wider md:text-lg lg:text-xl xl:text-2xl;
+	@apply md:text-start text-center text-white font-barlow-condensed tracking-wider md:text-lg lg:text-xl xl:text-2xl;
 }
 #descriptionCard h5 {
-  @apply lg:text-start text-center text-gray-400 uppercase font-bellefair text-base md:text-xl lg:text-2xl xl:text-3xl;
+	@apply lg:text-start text-center text-gray-400 uppercase font-bellefair text-base md:text-xl lg:text-2xl xl:text-3xl;
 }
 #descriptionCard h3 {
-  @apply lg:text-start text-center text-white uppercase font-bellefair text-2xl md:text-4xl lg:text-5xl xl:text-7xl;
+	@apply lg:text-start text-center text-white uppercase font-bellefair text-2xl md:text-4xl lg:text-5xl xl:text-7xl;
 }
 #descriptionCard p {
-  @apply lg:text-start text-center text-sky-200 font-barlow-condensed md:text-lg lg:text-xl xl:text-2xl;
+	@apply lg:text-start text-center text-sky-200 font-barlow-condensed md:text-lg lg:text-xl xl:text-2xl;
 }
 /*End of crew*/
 
 /*technology*/
 #technology h2 {
-  @apply lg:text-start text-white text-base md:text-lg lg:text-xl font-barlow-condensed tracking-wider text-center;
+	@apply lg:text-start text-white text-base md:text-lg lg:text-xl font-barlow-condensed tracking-wider text-center;
 }
 #technology h2 span {
-  @apply text-gray-300;
+	@apply text-gray-300;
 }
 #techdesc h6 {
-  @apply text-sky-100 font-barlow-condensed text-lg md:text-xl lg:text-2xl text-center;
+	@apply text-sky-100 font-barlow-condensed text-lg md:text-2xl lg:text-3xl xl:text-4xl text-center lg:text-start;
 }
 #techdesc h3 {
-  @apply text-white font-bellefair text-2xl md:text-3xl lg:text-4xl text-center;
+	@apply text-white font-bellefair text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-start;
 }
 #techdesc p {
-  @apply text-sky-200 md:text-lg lg:text-xl font-barlow-condensed text-center;
+	@apply text-sky-200 md:text-xl  xl:text-2xl font-barlow-condensed text-center lg:text-start;
 }
 /*end of technology*/
